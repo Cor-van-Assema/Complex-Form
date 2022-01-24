@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet" />
+    <title>Ice cream shop</title>
+</head>
+
+<body>
+    <header>
+        <div>
+            <h1>Ahmed's Ice Cream Shop</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="flavours.html">Flavours</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>chef's favorite recipe</h2>
+        <form name="contact" method="POST" data-netlify="true">
+            <p>
+                <label>Your Name: <input type="text" name="name" /></label>
+            </p>
+            <p>
+                <label>Your Email: <input type="email" name="email" /></label>
+            </p>
+            <p>
+                <label>Telephone number: <input type="tel" name="telephone" pattern="([+ -]|[0-9])*" /></label>
+                <small>Use: numbers 0-9, spaces, - or + </small>
+            </p>
+            <p>
+                <label>Your age: <input type="Number" name="Age" Min="18" Max="99" /></label>
+                <small>only 18+ </small>
+            </p>
+            <p>
+                <label>Your date of birth: <input type="date" value="" name="DateOB" min="1922-01-01" max="2002-12-31" /></label>
+            </p>
+            <p>
+                <label>Your gender: 
+                    <span class="gender">
+                    <input type="radio" name="Gender" />Male
+                    <input type="radio" name="Gender" />Female
+                    <input type="radio" name="Gender" />Binair
+                    </span>
+                </label>
+            </p>
+            <p>
+                <label>Your favorite cuisine: 
+                    <span class="cuisine">
+                    <input type="checkbox" name="Cuisine1" />French
+                    <input type="checkbox" name="Cuisine2" />Italian
+                    <input type="checkbox" name="Cuisine3" />Spanisch
+                    <input type="checkbox" name="Cuisine4" />Arabic
+                    </span>
+                </label>
+            </p>
+            <p>
+                <label>Your favorite apron color: <input type="color" name="Aproncolor" value="#ffaa99"/></label>
+            </p>
+            <p>
+                <label>Your biography: <textarea name="Biography" rows="5" cols="60"></textarea></label>
+            </p>
+            <p>
+                <label>Upload your latest recipe: <input type="file" name="Recipe" /></label>
+            </p>
+            <p>
+                <label>URL to recipe website: <input type="url" name="URLRecipe" /></label>
+            </p>
+            <div id="buttons">
+                <button type="submit" id="SendButton" >Send</button>
+                <button type="reset" id="ResetButton" >Reset form</button>
+            </div>
+        </form>
+    </main>
+    <footer>
+        <div>Copyright Ahmed ©️ 2021</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="flavours.html">Flavours</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+
+            </ul>
+        </nav>
+    </footer>
+</body>
+
+</html>

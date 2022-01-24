@@ -1,0 +1,244 @@
+/******************************************************************************/
+
+
+/* Colors, general, non-text */
+
+body {
+    background-color: #ffcad4;
+}
+
+header div {
+    background-color: greenyellow;
+}
+
+
+/******************************************************************************/
+
+
+/* Typography: colors */
+
+body {
+    color: #9d8189;
+}
+
+h1 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    -webkit-text-fill-color: yellow;
+    -webkit-text-stroke-width: 1.5px;
+    -webkit-text-stroke-color: black;
+}
+
+a {
+    color: hsl(213, 36%, 32%);
+}
+
+
+/******************************************************************************/
+
+
+/* Typography: sizes */
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.8rem;
+}
+
+header nav {
+    font-size: 2.4rem;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2.4rem;
+    padding: 10px 0px;
+}
+
+
+/******************************************************************************/
+
+
+/* Element styling: non-layout */
+
+header div {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border-bottom-style: dotted;
+    border-bottom-color: yellow;
+}
+
+img {
+    border-width: 3px;
+    border-style: solid;
+    border-color: white;
+    box-shadow: 3px 3px 3px gray;
+}
+
+header li {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid yellow;
+    text-align: center;
+}
+
+header li.last {
+    border-bottom-width: 0px;
+}
+
+footer {
+    border-top: 1px solid yellow;
+    padding-top: 1rem;
+}
+
+footer div {
+    margin: 0 auto;
+    width: fit-content;
+}
+
+footer li {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    text-align: center;
+}
+
+
+/******************************************************************************/
+
+
+/* Layout */
+
+
+/* Less margin and padding on narrow screen */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Consistent sizing of elements */
+
+* {
+    box-sizing: border-box;
+}
+
+h1 {
+    text-align: center;
+}
+
+header ul {
+    margin: 0 auto;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    width: fit-content;
+}
+
+header nav li {
+    margin-bottom: 0.2rem;
+    list-style: none;
+}
+
+header ul a {
+    text-decoration: none;
+}
+
+img {
+    margin: 0 auto;
+    width: 60%;
+    display: block;
+    /* Margin auto works on block-level elements only */
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+main {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+}
+
+main h2 {
+    margin-bottom: 0.5rem;
+}
+
+main p {
+    margin-bottom: 0.5rem;
+}
+
+main {
+    margin-bottom: 2rem;
+}
+
+footer {
+    margin-top: 5rem;
+    padding-top: 5rem;
+}
+
+
+#ResetButton {
+    margin-left: 50%;
+    background-color:red ;
+    border-radius: 8px;
+    padding: 5px;
+    
+}    
+
+#SendButton {
+    background-color:green ;
+    border-radius: 8px;
+    padding: 5px;
+    
+}    
+
+
+
+/* Only one breakpoint, on production website you'll want more than one. */
+
+@media (min-width: 1024px) {
+    /* Changes for exercise */
+    body {
+        background-color: #69ddf7;
+        color: #111111;
+        font-size: 1.5rem;
+        line-height: 3rem;
+    }
+    main {
+        margin: 0 20%;
+    }
+    /* Extra changes */
+    header h1 {
+        font-size: 5rem;
+        padding-top: 2.5rem;
+        padding-bottom: 2.5rem;
+    }
+    header nav li {
+        font-size: 3.5rem;
+        display: inline;
+        padding-top: 0;
+        padding-bottom: 0;
+        border-bottom-width: 0;
+        margin-right: 2rem;
+        border: 3px solid yellow;
+        border-radius: 0.5rem;
+        padding: 0.5rem 3rem;
+    }
+    header nav li.last {
+        border-bottom-width: 3px;
+    }
+    img {
+        width: 40%;
+        float: right;
+        margin-left: 3rem;
+    }
+    footer nav li {
+        display: inline;
+    }
+    footer nav {
+        margin: 0 auto;
+        width: fit-content;
+    }
+}
